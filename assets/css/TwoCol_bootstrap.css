@@ -1,0 +1,92 @@
+/*sticky footer stuff*/
+/*http://ryanfait.com/html5-sticky-footer/*/
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+  	margin: 0;
+  	height:90%;
+    width: 100%;
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-image: url("../images/background.gif");
+    background-repeat: repeat;
+}
+
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+
+footer, .push {
+    margin: 10px 0;
+	height: 55px; 
+}
+/*end sticky footer stuff*/
+
+header {
+	background: #fff;
+}
+
+
+footer {
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+ 	padding: 20px 0;
+	background: #666;
+	color: #fff;
+	clear: both;
+	border-top: 8px solid #4aaaa5;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+nav.navbar ul a {
+  text-transform: uppercase;
+  color:#fff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+nav.navbar ul a:hover {
+  text-decoration: underline;
+}
+ 
+.btn-primary {
+    background: #4aaaa5;
+    color: #ffffff;
+}
+
+.auth-image {
+	width: 200px;
+	height: auto;
+	margin-top: 10px;
+	float: left;
+	margin-right: 25px;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+
+@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }
